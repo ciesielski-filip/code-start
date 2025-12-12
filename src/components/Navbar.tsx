@@ -7,8 +7,12 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 glass border-b border-white/10">
-      <div className="max-w-7xl mx-auto px-6 py-4">
+    <nav className="fixed top-0 left-0 right-0 z-50">
+      {/* Navbar Background & Border */}
+      <div className="absolute inset-0 glass border-b border-white/10 z-20" />
+
+      {/* Navbar Content */}
+      <div className="relative z-30 max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
@@ -59,7 +63,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 glass-panel p-6 flex flex-col gap-6 animate-slide-down">
+        <div className="md:hidden absolute top-0 left-0 right-0 z-10 glass pt-24 pb-6 px-6 flex flex-col gap-6 animate-slide-down shadow-2xl">
           <div className="flex flex-col gap-4">
             <Link
               to="/kursy"
