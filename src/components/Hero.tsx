@@ -32,17 +32,21 @@ export function Hero() {
 
         {/* CTA buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-          <Button size="lg" className="bg-[#FF6B35] hover:bg-[#FF6B35]/90 text-white px-8">
-            Rozpocznij naukę
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="glass border-white/20 text-white hover:bg-white/5"
-          >
-            <Code className="w-4 h-4 mr-2" />
-            Zobacz kursy
-          </Button>
+          <Link to="/kursy">
+            <Button size="lg" className="bg-[#FF6B35] hover:bg-[#FF6B35]/90 text-white px-8">
+              Rozpocznij naukę
+            </Button>
+          </Link>
+          <Link to="/kursy">
+            <Button
+              size="lg"
+              variant="outline"
+              className="glass border-white/20 text-white hover:bg-white/5"
+            >
+              <Code className="w-4 h-4 mr-2" />
+              Zobacz kursy
+            </Button>
+          </Link>
         </div>
 
         {/* Stats */}
