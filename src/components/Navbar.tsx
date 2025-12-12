@@ -39,7 +39,7 @@ export function Navbar() {
           </div>
 
           {/* Actions */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 relative z-50">
             <Button
               variant="ghost"
               className="hidden md:inline-flex text-white hover:bg-white/5"
@@ -63,7 +63,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-0 left-0 right-0 z-10 glass pt-24 pb-6 px-6 flex flex-col gap-6 animate-slide-down shadow-2xl">
+        <div className="md:hidden absolute top-0 left-0 right-0 z-10 glass pt-24 pb-24 px-6 flex flex-col gap-6 animate-slide-down shadow-2xl">
           <div className="flex flex-col gap-4">
             <Link
               to="/kursy"
