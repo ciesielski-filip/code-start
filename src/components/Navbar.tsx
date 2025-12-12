@@ -59,7 +59,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-black/95 backdrop-blur-xl border-b border-white/10 p-6 flex flex-col gap-6 animate-in slide-in-from-top-2">
+        <div className="md:hidden absolute top-full left-0 right-0 glass-panel p-6 flex flex-col gap-6 animate-slide-down">
           <div className="flex flex-col gap-4">
             <Link
               to="/kursy"
