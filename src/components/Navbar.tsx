@@ -62,52 +62,55 @@ export function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden absolute top-0 left-0 right-0 z-10 glass pt-24 pb-24 px-6 flex flex-col gap-6 animate-slide-down shadow-2xl">
-          <div className="flex flex-col gap-4">
-            <Link
-              to="/kursy"
-              className="text-lg text-white/80 hover:text-white transition-colors py-2"
-              onClick={() => setIsOpen(false)}
-            >
-              Kursy
-            </Link>
-            <a
-              href="#"
-              className="text-lg text-white/80 hover:text-white transition-colors py-2"
-              onClick={() => setIsOpen(false)}
-            >
-              O platformie
-            </a>
-            <a
-              href="#"
-              className="text-lg text-white/80 hover:text-white transition-colors py-2"
-              onClick={() => setIsOpen(false)}
-            >
-              Cennik
-            </a>
-            <a
-              href="#"
-              className="text-lg text-white/80 hover:text-white transition-colors py-2"
-              onClick={() => setIsOpen(false)}
-            >
-              Kontakt
-            </a>
-          </div>
-
-          <div className="flex flex-col gap-3 pt-4 border-t border-white/10">
-            <Button
-              variant="ghost"
-              className="w-full text-white hover:bg-white/5 justify-start"
-            >
-              Zaloguj się
-            </Button>
-            <Button className="w-full bg-[#FF6B35] hover:bg-[#FF6B35]/90 text-white justify-start">
-              Dołącz teraz
-            </Button>
-          </div>
+      <div
+        className={`md:hidden absolute top-0 left-0 right-0 z-10 glass pt-24 pb-24 px-6 flex flex-col gap-6 shadow-2xl transition-all duration-500 ease-in-out ${isOpen
+            ? "translate-y-0 opacity-100 pointer-events-auto"
+            : "-translate-y-full opacity-0 pointer-events-none"
+          }`}
+      >
+        <div className="flex flex-col gap-4">
+          <Link
+            to="/kursy"
+            className="text-lg text-white/80 hover:text-white transition-colors py-2"
+            onClick={() => setIsOpen(false)}
+          >
+            Kursy
+          </Link>
+          <a
+            href="#"
+            className="text-lg text-white/80 hover:text-white transition-colors py-2"
+            onClick={() => setIsOpen(false)}
+          >
+            O platformie
+          </a>
+          <a
+            href="#"
+            className="text-lg text-white/80 hover:text-white transition-colors py-2"
+            onClick={() => setIsOpen(false)}
+          >
+            Cennik
+          </a>
+          <a
+            href="#"
+            className="text-lg text-white/80 hover:text-white transition-colors py-2"
+            onClick={() => setIsOpen(false)}
+          >
+            Kontakt
+          </a>
         </div>
-      )}
+
+        <div className="flex flex-col gap-3 pt-4 border-t border-white/10">
+          <Button
+            variant="ghost"
+            className="w-full text-white hover:bg-white/5 justify-start"
+          >
+            Zaloguj się
+          </Button>
+          <Button className="w-full bg-[#FF6B35] hover:bg-[#FF6B35]/90 text-white justify-start">
+            Dołącz teraz
+          </Button>
+        </div>
+      </div>
     </nav>
   );
 }

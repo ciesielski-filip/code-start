@@ -1,4 +1,5 @@
 import { Code2, Github, Twitter, Linkedin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
@@ -17,18 +18,18 @@ export function Footer() {
               Twoja droga do kariery w web developmencie.
             </p>
           </div>
-          
+
           {/* Links */}
           <div>
             <h4 className="text-white mb-4">Platforma</h4>
             <ul className="space-y-2 text-white/60 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Kursy</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Ścieżki nauki</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Certyfikaty</a></li>
+              <li><Link to="/kursy" className="hover:text-white transition-colors">Kursy</Link></li>
+              <li><Link to="/kursy" className="hover:text-white transition-colors">Ścieżki nauki</Link></li>
+              <li><Link to="/kursy" className="hover:text-white transition-colors">Certyfikaty</Link></li>
               <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-white mb-4">Firma</h4>
             <ul className="space-y-2 text-white/60 text-sm">
@@ -38,7 +39,7 @@ export function Footer() {
               <li><a href="#" className="hover:text-white transition-colors">Polityka prywatności</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-white mb-4">Społeczność</h4>
             <ul className="space-y-2 text-white/60 text-sm">
@@ -49,13 +50,13 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        
+
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-white/60 text-sm">
             © 2025 CodeLearn. Wszystkie prawa zastrzeżone.
           </p>
-          
+
           {/* Social links */}
           <div className="flex items-center gap-4">
             <a href="#" className="text-white/60 hover:text-[#FF6B35] transition-colors">

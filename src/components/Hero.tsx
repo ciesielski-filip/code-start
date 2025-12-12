@@ -1,5 +1,6 @@
 import { Button } from "./ui/button";
 import { Code, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function Hero() {
   return (
