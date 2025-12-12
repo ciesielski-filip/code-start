@@ -63,10 +63,13 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden absolute top-0 left-0 right-0 z-10 glass pt-24 pb-24 px-6 flex flex-col gap-6 shadow-2xl transition-all duration-500 ease-in-out transform ${isOpen
-            ? "translate-y-0 opacity-100 visible pointer-events-auto"
-            : "-translate-y-full opacity-0 invisible pointer-events-none"
-          }`}
+        className="md:hidden absolute top-0 left-0 right-0 z-10 glass pt-24 pb-24 px-6 flex flex-col gap-6 shadow-2xl transition-all duration-500 ease-in-out"
+        style={{
+          transform: isOpen ? "translateY(0)" : "translateY(-100%)",
+          opacity: isOpen ? 1 : 0,
+          visibility: isOpen ? "visible" : "hidden",
+          pointerEvents: isOpen ? "auto" : "none",
+        }}
       >
         <div className="flex flex-col gap-4">
           <Link
