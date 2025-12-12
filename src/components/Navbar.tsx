@@ -102,7 +102,7 @@ export function Navbar() {
           </a>
         </div>
 
-        <div className="flex flex-col gap-3 pt-4 border-t border-white/10">
+        <div className="flex flex-col gap-3 p-5 border-t border-white/10">
           <Button
             variant="ghost"
             className="w-full text-white hover:bg-white/5 justify-start"
