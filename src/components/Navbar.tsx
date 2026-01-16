@@ -1,10 +1,12 @@
-import { Code2, Menu, X } from "lucide-react";
+import { Code2, Menu, X, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { CourseAdvisor } from "./CourseAdvisor";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isAdvisorOpen, setIsAdvisorOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50">
@@ -36,6 +38,13 @@ export function Navbar() {
             <a href="#" className="text-white/80 hover:text-white transition-colors">
               Kontakt
             </a>
+            <button
+              onClick={() => setIsAdvisorOpen(true)}
+              className="flex items-center gap-2 text-yellow-400 hover:text-yellow-300 transition-colors"
+            >
+              <Sparkles className="w-4 h-4" />
+              <span>Doradź mi kurs</span>
+            </button>
           </div>
 
           {/* Actions */}
@@ -100,6 +109,16 @@ export function Navbar() {
           >
             Kontakt
           </a>
+          <button
+            onClick={() => {
+              setIsOpen(false);
+              setIsAdvisorOpen(true);
+            }}
+            className="flex items-center gap-2 text-lg text-yellow-400 hover:text-yellow-300 transition-colors py-2"
+          >
+            <Sparkles className="w-5 h-5" />
+            <span>Doradź mi kurs</span>
+          </button>
         </div>
 
         <div className="flex flex-col gap-3 p-5 border-t border-white/10">
@@ -114,6 +133,8 @@ export function Navbar() {
           </Button>
         </div>
       </div>
+
+      <CourseAdvisor isOpen={isAdvisorOpen} onClose={() => setIsAdvisorOpen(false)} />
     </nav>
   );
 }
