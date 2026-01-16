@@ -37,10 +37,12 @@ const questions: Question[] = [
     },
 ];
 
+import { OPENAI_API_KEY } from "../config";
+
 export function CourseAdvisor({ isOpen, onClose }: CourseAdvisorProps) {
     const [step, setStep] = useState(0);
     const [answers, setAnswers] = useState<Record<string, string>>({});
-    const [apiKey, setApiKey] = useState("");
+    const [apiKey, setApiKey] = useState(OPENAI_API_KEY);
     const [loading, setLoading] = useState(false);
     const [recommendation, setRecommendation] = useState<{ courseId: number; reason: string } | null>(null);
     const [error, setError] = useState<string | null>(null);
