@@ -346,5 +346,347 @@ export const coursesData = [
       "Nowoczesne narzędzia build",
       "Best practices 2024"
     ]
+  },
+  {
+    id: 7,
+    title: "Python i Analiza Danych Data Science",
+    description: "Naucz się Pythona od podstaw i odkryj świat Data Science.",
+    level: "Początkujący / Średniozaawansowany",
+    duration: "25 godz",
+    students: "4.5k",
+    image: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    fullDescription: "Python to najpopularniejszy język w świecie Data Science i AI. Ten kurs nauczy Cię programowania oraz analizy danych z pandami.",
+    instructor: "Karolina Wójcik",
+    rating: 4.9,
+    totalLessons: 40,
+    modules: [
+      {
+        title: "Start z Pythonem",
+        lessons: [
+          { title: "Instalacja i pierwsze kroki", duration: "30 min", completed: false },
+          { title: "Zmienne i struktury danych", duration: "45 min", completed: false },
+          { title: "Pętle i funkcje", duration: "50 min", completed: false }
+        ]
+      },
+      {
+        title: "Praca z danymi",
+        lessons: [
+          { title: "Wprowadzenie do Pandas", duration: "60 min", completed: false },
+          { title: "Analiza zbiorów danych", duration: "55 min", completed: false },
+          { title: "Wizualizacja z Matplotlib", duration: "45 min", completed: false }
+        ]
+      }
+    ],
+    requirements: ["Brak, uczymy się od zera", "Chęć pracy z danymi"],
+    whatYouLearn: ["Python Syntax", "Pandas & NumPy", "Wizualizacja danych", "Podstawy ML"]
+  },
+  {
+    id: 8,
+    title: "UX/UI Design Fundamentals",
+    description: "Projektuj użyteczne i piękne interfejsy. Figma od podstaw.",
+    level: "Początkujący",
+    duration: "15 godz",
+    students: "1.9k",
+    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080", // Changed image!
+    fullDescription: "Zostań projektantem interfejsów! Naucz się zasad designu, obsługi Figmy i tworzenia prototypów.",
+    instructor: "Michał Design",
+    rating: 4.8,
+    totalLessons: 20,
+    modules: [
+      {
+        title: "Podstawy UX",
+        lessons: [
+          { title: "Czym jest UX?", duration: "30 min", completed: false },
+          { title: "Badania użytkowników", duration: "40 min", completed: false },
+          { title: "Persony i User Flows", duration: "45 min", completed: false }
+        ]
+      },
+      {
+        title: "Figma w praktyce",
+        lessons: [
+          { title: "Interfejs Figmy", duration: "35 min", completed: false },
+          { title: "Tworzenie komponentów", duration: "50 min", completed: false },
+          { title: "Prototypowanie", duration: "40 min", completed: false }
+        ]
+      }
+    ],
+    requirements: ["Kreatywność", "Chęci do nauki"],
+    whatYouLearn: ["Figma", "Zasady UX", "Prototypowanie", "Design Systemy"]
+  },
+  {
+    id: 9,
+    title: "DevOps & Docker",
+    description: "Zautomatyzuj wdrażanie aplikacji. Docker, CI/CD i chmura.",
+    level: "Zaawansowany",
+    duration: "18 godz",
+    students: "1.1k",
+    image: "https://images.unsplash.com/photo-1607799275518-d58665d099db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080", // Changed image!
+    fullDescription: "Dla programistów chcących wejść w świat DevOps. Konteneryzacja i automatyzacja procesów.",
+    instructor: "Adam Admin",
+    rating: 4.7,
+    totalLessons: 25,
+    modules: [
+      {
+        title: "Konteneryzacja",
+        lessons: [
+          { title: "Wstęp do Dockera", duration: "45 min", completed: false },
+          { title: "Dockerfile i Image", duration: "50 min", completed: false },
+          { title: "Docker Compose", duration: "55 min", completed: false }
+        ]
+      },
+      {
+        title: "CI/CD",
+        lessons: [
+          { title: "GitHub Actions", duration: "60 min", completed: false },
+          { title: "Automatyczne testy", duration: "40 min", completed: false },
+          { title: "Deployment na VPS", duration: "50 min", completed: false }
+        ]
+      }
+    ],
+    requirements: ["Znajomość Linuxa", "Podstawy programowania"],
+    whatYouLearn: ["Docker", "Kubernetes basics", "CI/CD Pipelines", "AWS Basics"]
+  },
+  {
+    id: 10,
+    title: "Java & Spring Boot",
+    description: "Twórz potężne aplikacje biznesowe w najpopularniejszym języku korporacyjnym.",
+    level: "Średniozaawansowany",
+    duration: "30 godz",
+    students: "3.2k",
+    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    fullDescription: "Java to król systemów enterprise. Poznaj ten język oraz framework Spring Boot, na którym stoi połowa internetu.",
+    instructor: "Krzysztof Java",
+    rating: 4.8,
+    totalLessons: 60,
+    modules: [
+      {
+        title: "Język Java",
+        lessons: [
+          { title: "OOP w Javie", duration: "50 min", completed: false },
+          { title: "Kolekcje i Stream API", duration: "55 min", completed: false },
+          { title: "Wielowątkowość", duration: "60 min", completed: false }
+        ]
+      },
+      {
+        title: "Spring Boot",
+        lessons: [
+          { title: "Wstrzykiwanie zależności", duration: "45 min", completed: false },
+          { title: "Spring Data JPA", duration: "50 min", completed: false },
+          { title: "Budowa REST API", duration: "60 min", completed: false }
+        ]
+      }
+    ],
+    requirements: ["Znajomość podstaw programowania", "Logiczne myślenie"],
+    whatYouLearn: ["Java 17+", "Spring Framework", "Hibernate", "Testy jednostkowe"]
+  },
+  {
+    id: 11,
+    title: "C# i .NET Development",
+    description: "Startuj w świecie Microsoft. Twórz aplikacje webowe i desktopowe.",
+    level: "Początkujący / Średniozaawansowany",
+    duration: "22 godz",
+    students: "2.8k",
+    image: "https://images.unsplash.com/photo-1599507593499-a3f7d7d97667?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    fullDescription: "Ekosystem .NET rozwija się błyskawicznie. Poznaj C# - nowoczesny, wszechstronny język od Microsoftu.",
+    instructor: "Marek .NET",
+    rating: 4.9,
+    totalLessons: 50,
+    modules: [
+      {
+        title: "Podstawy C#",
+        lessons: [
+          { title: "Składnia i typy", duration: "40 min", completed: false },
+          { title: "Klasy i Obiekty", duration: "50 min", completed: false },
+          { title: "LINQ", duration: "45 min", completed: false }
+        ]
+      },
+      {
+        title: "ASP.NET Core",
+        lessons: [
+          { title: "Wstęp do WebAPI", duration: "50 min", completed: false },
+          { title: "Entity Framework", duration: "55 min", completed: false },
+          { title: "Blazor w pigułce", duration: "40 min", completed: false }
+        ]
+      }
+    ],
+    requirements: ["System Windows/macOS"],
+    whatYouLearn: ["Język C#", ".NET 8", "Entity Framework", "SQL Server"]
+  },
+  {
+    id: 12,
+    title: "Tester Automatyzujący",
+    description: "Zadbaj o jakość oprogramowania. Selenium, Cypress i testy API.",
+    level: "Początkujący",
+    duration: "16 godz",
+    students: "2.0k",
+    image: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    fullDescription: "Ścieżka QA to świetny sposób na wejście do IT. Naucz się pisać skrypty testowe i dbać o jakość kodu.",
+    instructor: "Joanna Testowa",
+    rating: 4.7,
+    totalLessons: 35,
+    modules: [
+      {
+        title: "Teoria testowania",
+        lessons: [
+          { title: "Rodzaje testów", duration: "30 min", completed: false },
+          { title: "Scenariusze testowe", duration: "40 min", completed: false },
+          { title: "Zgłaszanie błędów", duration: "30 min", completed: false }
+        ]
+      },
+      {
+        title: "Automatyzacja",
+        lessons: [
+          { title: "Podstawy Cypress", duration: "50 min", completed: false },
+          { title: "Selektory elementów", duration: "45 min", completed: false },
+          { title: "Testowanie API", duration: "40 min", completed: false }
+        ]
+      }
+    ],
+    requirements: ["Dokładność", "Podstawy HTML"],
+    whatYouLearn: ["Metodyki testowania", "Cypress / Selenium", "Postman", "Raportowanie błędów"]
+  },
+  {
+    id: 13,
+    title: "AI Engineer: OpenAI & LLMs",
+    description: "Naucz się budować aplikacje oparte o sztuczną inteligencję i LLM.",
+    level: "Zaawansowany",
+    duration: "20 godz",
+    students: "3.8k",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    fullDescription: "Przyszłość to AI. Naucz się integrować modele językowe jak GPT-4 z własnymi aplikacjami.",
+    instructor: "Tomasz AI",
+    rating: 4.9,
+    totalLessons: 40,
+    modules: [],
+    requirements: ["Python", "Podstawy API"],
+    whatYouLearn: ["OpenAI API", "Hugging Face", "LangChain", "Prompt Engineering"]
+  },
+  {
+    id: 14,
+    title: "Cybersecurity Fundamentals",
+    description: "Chroń systemy przed atakami. Podstawy bezpieczeństwa IT.",
+    level: "Początkujący / Średniozaawansowany",
+    duration: "25 godz",
+    students: "1.7k",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    fullDescription: "Zrozum jak działają hakerzy i jak zabezpieczać przed nimi aplikacje i sieci.",
+    instructor: "Kamil Security",
+    rating: 4.8,
+    totalLessons: 50,
+    modules: [],
+    requirements: ["Podstawy sieci", "Linux"],
+    whatYouLearn: ["Ethical Hacking", "OWASP Top 10", "Kryptografia", "Analiza malware"]
+  },
+  {
+    id: 15,
+    title: "Mobile Dev: Flutter",
+    description: "Twórz aplikacje na iOS i Androida w jednym kodzie.",
+    level: "Średniozaawansowany",
+    duration: "28 godz",
+    students: "2.5k",
+    image: "https://images.unsplash.com/photo-1551651639-927b59558155?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    fullDescription: "Flutter to najszybciej rozwijający się framework mobilny. Zbuduj piękne, natywne aplikacje.",
+    instructor: "Darek Mobile",
+    rating: 4.8,
+    totalLessons: 55,
+    modules: [],
+    requirements: ["Podstawy programowania"],
+    whatYouLearn: ["Dart", "Flutter Widgets", "State Management", "Publikacja w sklepach"]
+  },
+  {
+    id: 16,
+    title: "Cloud Computing: AWS",
+    description: "Zdobądź certyfikat i pracuj w chmurze Amazon Web Services.",
+    level: "Średniozaawansowany",
+    duration: "35 godz",
+    students: "1.4k",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    fullDescription: "Chmura to standard. Poznaj usługi AWS od EC2 po Lambda i bazy danych RDS.",
+    instructor: "Wojtek Chmura",
+    rating: 4.7,
+    totalLessons: 70,
+    modules: [],
+    requirements: ["Podstawy Linuxa", "Sieci komputerowe"],
+    whatYouLearn: ["EC2 & S3", "IAM Security", "Serverless Lambda", "VPC Networking"]
+  },
+  {
+    id: 17,
+    title: "SQL Masterclass",
+    description: "Opanuj bazy danych. Od prostych zapytań po zaawansowaną analitykę.",
+    level: "Początkujący",
+    duration: "14 godz",
+    students: "5.0k",
+    image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    fullDescription: "Każda firma potrzebuje danych. Naucz się wyciągać wnioski z baz danych za pomocą SQL.",
+    instructor: "Agnieszka Dane",
+    rating: 4.9,
+    totalLessons: 30,
+    modules: [],
+    requirements: ["Brak, uczymy się od zera"],
+    whatYouLearn: ["SELECT, JOIN, GROUP BY", "Projektowanie baz", "PostgreSQL", "Optymalizacja zapytań"]
+  },
+  {
+    id: 18,
+    title: "Game Dev: Unity & C#",
+    description: "Twórz własne gry 2D i 3D w najpopularniejszym silniku na świecie.",
+    level: "Początkujący",
+    duration: "40 godz",
+    students: "1.9k",
+    image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    fullDescription: "Marzysz o tworzeniu gier? Unity to potężne narzędzie, które pozwoli Ci zrealizować pomysły.",
+    instructor: "Patryk Gamedev",
+    rating: 4.8,
+    totalLessons: 80,
+    modules: [],
+    requirements: ["Pasja do gier", "Podstawy matematyki"],
+    whatYouLearn: ["Interfejs Unity", "Skryptowanie w C#", "Fizyka w grach", "Animacje postaci"]
+  },
+  {
+    id: 19,
+    title: "Blockchain & Web3",
+    description: "Zrozum technologię za Bitcoinem. Twórz Smart Contracts w Solidity.",
+    level: "Zaawansowany",
+    duration: "20 godz",
+    students: "0.8k",
+    image: "https://images.unsplash.com/photo-1621504450168-38f64731b6b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    fullDescription: "Wejdź do świata zdecentralizowanych finansów (DeFi) i aplikacji (dApps).",
+    instructor: "Krypto Ekspert",
+    rating: 4.6,
+    totalLessons: 45,
+    modules: [],
+    requirements: ["JavaScript", "Podstawy kryptografii"],
+    whatYouLearn: ["Blockchain theory", "Ethereum & Solidity", "NFTs", "Hardhat/Truffle"]
+  },
+  {
+    id: 20,
+    title: "Project Management w IT",
+    description: "Zostań Project Managerem (PM) lub Product Ownerem. Agile i Scrum.",
+    level: "Początkujący",
+    duration: "12 godz",
+    students: "2.1k",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    fullDescription: "Nie każdy w IT musi kodować. Poznaj metodyki zarządzania projektami informatycznymi.",
+    instructor: "Magda Manager",
+    rating: 4.7,
+    totalLessons: 25,
+    modules: [],
+    requirements: ["Umiejętności miękkie", "Angielski"],
+    whatYouLearn: ["Agile Manifesto", "Scrum Framework", "Jira & Confluence", "Zarządzanie ryzykiem"]
+  },
+  {
+    id: 21,
+    title: "Linux Administrator",
+    description: "Opanuj command line. Zarządzaj serwerami jak profesjonalista.",
+    level: "Średniozaawansowany",
+    duration: "18 godz",
+    students: "1.3k",
+    image: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+    fullDescription: "Linux to podstawa internetu. Naucz się konfigurować, zabezpieczać i zarządzać serwerami.",
+    instructor: "Admin Linux",
+    rating: 4.8,
+    totalLessons: 35,
+    modules: [],
+    requirements: ["Komputer z Linux/macOS lub VM"],
+    whatYouLearn: ["Bash scripting", "Uprawnienia plików", "Systemd", "Sieci w Linuxie"]
   }
 ];

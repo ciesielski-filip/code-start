@@ -1,8 +1,12 @@
+import { useState } from "react";
 import { Button } from "./ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, FileQuestion } from "lucide-react";
 import { Link } from "react-router-dom";
+import { KnowledgeQuiz } from "./KnowledgeQuiz";
 
 export function CTA() {
+  const [isQuizOpen, setIsQuizOpen] = useState(false);
+
   return (
     <section className="relative py-20 px-6">
       <div className="max-w-4xl mx-auto">
@@ -17,9 +21,10 @@ export function CTA() {
             <p className="text-white/70 text-lg mb-8 max-w-xl mx-auto">
               Dołącz do tysięcy uczniów, którzy już rozwijają swoje umiejętności programistyczne.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link to="/kursy">
-                <Button size="lg" className="bg-[#FF6B35] hover:bg-[#FF6B35]/90 text-white px-8">
+
+            <div className="flex flex-col items-center gap-4 w-full max-w-sm mx-auto">
+              <Link to="/kursy" className="w-full">
+                <Button size="lg" className="bg-[#FF6B35] hover:bg-[#FF6B35]/90 text-white px-8 w-full">
                   Rozpocznij za darmo
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -27,14 +32,29 @@ export function CTA() {
               <Button
                 size="lg"
                 variant="ghost"
-                className="text-white hover:bg-white/10"
+                className="text-white hover:bg-white/10 w-full"
               >
                 Skontaktuj się z nami
+              </Button>
+
+              <Button
+                variant="outline"
+                className="border-white/20 text-white hover:bg-white/10 gap-2 w-full"
+                onClick={() => setIsQuizOpen(true)}
+              >
+                <FileQuestion className="w-4 h-4" />
+                Wypełnij ankietę HTML/CSS
               </Button>
             </div>
           </div>
         </div>
       </div>
+
+      <KnowledgeQuiz
+        isOpen={isQuizOpen}
+        onClose={() => setIsQuizOpen(false)}
+      />
     </section>
   );
 }
+

@@ -1,4 +1,4 @@
-import { Clock, Users, BarChart3 } from "lucide-react";
+import { Clock, Users } from "lucide-react";
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 
@@ -10,15 +10,16 @@ interface CourseCardProps {
   duration: string;
   students: string;
   image: string;
+  onClick?: () => void;
 }
 
-export function CourseCard({ id, title, description, level, duration, students, image }: CourseCardProps) {
+export function CourseCard({ id, title, description, level, duration, students, image, onClick }: CourseCardProps) {
   return (
     <div className="glass rounded-2xl overflow-hidden hover:border-[#FF6B35]/40 transition-all duration-300 group flex flex-col h-full">
       {/* Image */}
       <div className="relative h-48 overflow-hidden bg-gradient-to-br from-[#FF6B35]/20 to-transparent">
-        <img 
-          src={image} 
+        <img
+          src={image}
           alt={title}
           className="w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-300"
         />
@@ -28,13 +29,13 @@ export function CourseCard({ id, title, description, level, duration, students, 
           </span>
         </div>
       </div>
-      
+
       {/* Content */}
       <div className="p-6 flex flex-col flex-1">
         <div className="flex-1 space-y-4">
           <h3 className="text-white">{title}</h3>
           <p className="text-white/60">{description}</p>
-          
+
           {/* Stats */}
           <div className="flex items-center gap-4 pt-2">
             <div className="flex items-center gap-2 text-white/60 text-sm">
@@ -47,9 +48,9 @@ export function CourseCard({ id, title, description, level, duration, students, 
             </div>
           </div>
         </div>
-        
+
         {/* Action */}
-        <Link to={`/kursy/${id}`} className="mt-4">
+        <Link to={`/kursy/${id}`} className="mt-4" onClick={onClick}>
           <Button className="w-full bg-[#FF6B35] hover:bg-[#FF6B35]/90 text-white">
             Zobacz kurs
           </Button>
